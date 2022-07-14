@@ -1,36 +1,24 @@
 body {
     font-family: 'Archivo', sans-serif;
+    text-align: center;
 }
 
-#title {
-    background-color: #ff4c68;
-    color: #fff;
-}
-
-h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3.5rem;
-    line-height: 1.5;
-}
-
-h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3rem;
-    line-height: 1.5;
-}
-
-h3 {
-    font-family: 'Montserrat', sans-serif;
-    color: rgb(31, 30, 30);
-    font-size: 1.5rem;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;   
 }
 
 p {
     color: #8f8f8f;
 }
 
+/* Color */
+.color-section {
+    background-color: #ff4c68;
+    color: #fff;
+}
+
 .container-fluid {
-    padding: 3% 15%;
+    padding: 7% 15%;
 }
 
 /* navbar */
@@ -52,6 +40,18 @@ p {
     font-size: 1.2rem;
 }
 
+#title {
+    text-align: left;
+    padding: 3% 15% 5%;
+}
+
+/* title */
+.big-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
 /* Button Download */
 .download-button {
     margin: 5% 3% 5% 0;
@@ -62,13 +62,30 @@ p {
     width: 20%;
     transform: rotate(25deg);
     position: absolute;
+    right: 25%;
     /* margin: 20px auto auto 50px; */
+}
+
+@media (max-width: 1100px) {
+    #title {
+        text-align: center;
+    }
+
+    .container-fluid {
+        padding: 3% 5% 10%;
+    }
+
+    .title-image {
+        padding-top: 5%;
+        width: 80%;
+        position: static;
+        transform: rotate(0deg);
+    }
 }
 
 /* Features */
 #features {
     align-items: center;
-    padding: 7% 15%;
     position: relative;
     background-color: #fff;
     /* z-index: 1; */
@@ -76,14 +93,18 @@ p {
     /* padding: 150px 0 0 0; */
 }
 
+.features-heading {
+    color: rgb(31, 30, 30);
+    font-size: 1.5rem;
+}
+
 .box-features {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     margin: 1rem auto;
-    text-align: center;
-    padding: 5%;
+    padding: 7%;
 }
 
 .features-deskripsi {
@@ -103,7 +124,11 @@ p {
 #testimonials {
     background-color: #ef8172;
     color: #fff;
-    text-align: center;
+}
+
+.testimonials-heading {
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 .testimonials-img {
@@ -113,15 +138,9 @@ p {
     aspect-ratio: 1/1;
 }
 
-.carousel-inner {
-    padding: 7% 15%;
-}
-
 /* press */
 #press {
-    background-color: #ef8172;
     padding-bottom: 3%;
-    text-align: center;
 }
 
 .press-img {
@@ -130,13 +149,47 @@ p {
     margin: 20px 20px 50px;
 }
 
-
 /* Pricing */
-
 #pricing {
     padding: 7%;
+}
+
+.picing-big-heading {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.pricing-heading {
+    color: rgb(31, 30, 30);
+    font-size: 1.5rem;
+}
+
+.pricing-price {
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 .card {
     margin: 5% 3%;
 }
+
+/* Cta */
+.cta-heading {
+    font-size: 3.5rem;
+    /* width: 80%; */
+    line-height: 1.5;
+}
+
+/* Footer */
+#footer {
+    background-color: #fff;
+}
+
+.footer-social {
+    margin: 20px 10px;
+    color: black;
+    font-size: 1rem;
+    padding: 0;
+}
+
+
